@@ -3,6 +3,7 @@
     "AVR.programmer.tool": "C:\\Users\\Bhanu\\M2_LED_MATRIX\\M2_LED_MATRIX\\3_implementation\\a.out",
     "AVR.programmer.definitions": "C:\\Users\\Bhanu\\M2_LED_MATRIX\\M2_LED_MATRIX\\3_implementation\\main.c",
     "AVR.source.libraries": [
-        "C:\\Users\\Bhanu\\M2_LED_MATRIX\\M2_LED_MATRIX\\3_implementation"
+        "C:\\Users\\Bhanu\\M2_LED_MATRIX\\M2_LED_MATRIX\\3_implementation",
+        "C:\\WinAVR-20100110\\avr32\\include"
     ]
 }

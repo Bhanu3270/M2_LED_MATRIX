@@ -46,7 +46,7 @@ int main(void)
 {
     DDRD = 0x05; //PORTD as output
 
-    DDRB = 0x04; //PORTC as output
+    DDRB = 0x04; //PORTB as output
     
 char ALPHA[]={0,0,0,0,0,0,0,0,0,0,0,
     0,0b11000011,0b11000011,0b11000011,0b11000011,0b11100111,0b01111110,0b00111100,0,0,
@@ -81,7 +81,7 @@ char ALPHA[]={0,0,0,0,0,0,0,0,0,0,0,
                     for ( i=0;i<8;i++)
                     {
                         PORTB = ~PORT[i];    //ground the PORTC pin
-                        PORTB = ALPHA[i+x];  //power the PORTA 
+                        PORTB = ALPHA[i+x];  //power the PORTB
                         _delay_ms(1);
                         PORTD = PORT[i];     //clear pin after 1msec
                     }
@@ -90,4 +90,5 @@ char ALPHA[]={0,0,0,0,0,0,0,0,0,0,0,
     }            
         }
 }
+
 

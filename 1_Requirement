@@ -1,0 +1,6 @@
+1 led matrix (8*8)
+8 pices of resistor
+atmega328p
+Simullide for simulation 
+Vs code for complier,  makefile and multifile program 
+Winavr for making a hexfile

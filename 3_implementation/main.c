@@ -1,11 +1,11 @@
   #ifndef __AVR_ATmega328P__ 
 
   #define _AVR_ATmega328_
-
   #endif
 
-#include <avr/io.h>
-#include <avr/interrupt.h>
+  #include <avr/io.h>
+#ifndef _OPTIMIZE_
+#endif
 
     
 #define F_CPU 11059200UL //defining crystal frequency

@@ -6,11 +6,7 @@
                 "${workspaceFolder}/**",
                 "C:\\WinAVR-20100110\\avr\\include"
             ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
+        
             "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
             "cStandard": "gnu11",
             "cppStandard": "gnu++14",

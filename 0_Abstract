@@ -1,0 +1,4 @@
+Introduction: My project name is LED MATRIX (8*8)  
+It is minor project for my training period. 
+we connect led matrix to atmega328p and give voltage threw
+Threw Vcc and our led matrix will glow.

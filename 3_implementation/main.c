@@ -5,6 +5,7 @@
   #endif
 
 #include <avr/io.h>
+#include <avr/interrupt.h>
 
     
 #define F_CPU 11059200UL //defining crystal frequency

@@ -6,14 +6,10 @@
   #include <avr/io.h>
 #ifndef _OPTIMIZE_
 #endif
-
-    
-#define F_CPU 11059200UL //defining crystal frequency
 #include <util/delay.h>  //delay header
 #define DDRB _SFR_IO8(0x04)
 #define DDB0 0
 #define DDB1 1
-#define DDB2 2
 #define DDB3 3
 #define DDB4 4
 #define DDB5 5
@@ -51,13 +47,13 @@
 #define PORTD6 6
 #define PORTD7 7
 
-int main(void)
+ unsigned int main(void)
 {
     DDRD = 0x05; //PORTD as output
 
     DDRB = 0x04; //PORTB as output
     
-char ALPHA[]={0,0,0,0,0,0,0,0,0,0,0,
+unsigned char ALPHA[]={0,0,0,0,0,0,0,0,0,0,0,
     0,0b11000011,0b11000011,0b11000011,0b11000011,0b11100111,0b01111110,0b00111100,0,0,
     0b11000011,0b11000011,0b11000011,0b11111111,0b11111111,0b11000011,0b11000011,0b11000011,0,0,
     0b01111001,0b11111011,0b11011111,0b11011110,0b11011100,0b11011000,0b11111111,0b11111111    ,0,0,
@@ -74,8 +70,8 @@ char ALPHA[]={0,0,0,0,0,0,0,0,0,0,0,
     0,0,0,0,0,0,0,0,0,0,0,
     };
 
-    char PORT[8] = {1,2,4,8,16,32,64,128}; //pin values of a port 2^0,2^1,2^2……2^7
-        uint8_t l =0;
+    unsigned char PORT[8] = {1,2,4,8,16,32,64,128}; //pin values of a port 2^0,2^1,2^2……2^7
+
     
     while(1)
     {
